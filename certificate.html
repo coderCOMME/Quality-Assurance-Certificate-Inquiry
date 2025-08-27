@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>质保书明细</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f7f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #2c3e50;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        .info-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .info-item {
+            margin: 10px 0;
+            flex-basis: 48%;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .table-container {
+            overflow-x: auto;
+            margin-bottom: 25px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #2c3e50;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        tr:hover {
+            background-color: #e8f4fc;
+        }
+        .total-row {
+            font-weight: bold;
+            background-color: #2c3e50 !important;
+            color: white;
+        }
+        .summary {
+            background: #d4edda;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #155724;
+        }
+        @media (max-width: 768px) {
+            .info-item {
+                flex-basis: 100%;
+            }
+            th, td {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>质保书明细</h1>
+        </header>
+        
+        <div class="info-container">
+            <div class="info-item">
+                <span class="info-label">质保书编号：</span>MS20250309B3350620510001
+            </div>
+            <div class="info-item">
+                <span class="info-label">批号：</span>P5G0017030
+            </div>
+            <div class="info-item">
+                <span class="info-label">产品类型：</span>热轧H型钢
+            </div>
+            <div class="info-item">
+                <span class="info-label">执行标准：</span>EN 10025-2:2019 S355J2
+            </div>
+        </div>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>产品编号</th>
+                        <th>型号</th>
+                        <th>重量(吨)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>225020661001</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>2</td><td>225020661002</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>3</td><td>225020661003</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>4</td><td>225020661004</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>5</td><td>225020661005</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>6</td><td>225020661006</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>7</td><td>225020661007</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>8</td><td>225020661008</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>9</td><td>225020661009</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>10</td><td>225020661010</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>11</td><td>225020661011</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>12</td><td>225020661012</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>13</td><td>225020661013</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>14</td><td>225020661014</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>15</td><td>225020661015</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>16</td><td>225020661016</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>17</td><td>225020661017</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>18</td><td>225020661018</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>19</td><td>225020661019</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>20</td><td>225020661020</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>21</td><td>225020661021</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>22</td><td>225020661022</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>23</td><td>225020661023</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>24</td><td>225020661024</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>25</td><td>225020661025</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>26</td><td>225020661026</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>27</td><td>225020661027</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>28</td><td>225020661028</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>29</td><td>225020661029</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>30</td><td>225020661030</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>31</td><td>225020661031</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>32</td><td>225020661032</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>33</td><td>225020661033</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>34</td><td>225020661034</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>35</td><td>225020661035</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>36</td><td>225020661036</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>37</td><td>225020661037</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>38</td><td>225020661038</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>39</td><td>225020661039</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>40</td><td>225020661040</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>41</td><td>225020661041</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>42</td><td>225020661042</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>43</td><td>225020661043</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>44</td><td>225020661044</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>45</td><td>225020661045</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>46</td><td>225020661046</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>47</td><td>225020661047</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>48</td><td>225020661048</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>49</td><td>225020661049</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>50</td><td>225020661050</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>51</td><td>225020661051</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>52</td><td>225020661052</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>53</td><td>225020661053</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>54</td><td>225020661054</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>55</td><td>225020661055</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>56</td><td>225020661056</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>57</td><td>225020662001</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>58</td><td>225020662002</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>59</td><td>225020662003</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>60</td><td>225020662004</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>61</td><td>225020662005</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>62</td><td>225020662006</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>63</td><td>225020662007</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>64</td><td>225020662008</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>65</td><td>225020662009</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>66</td><td>225020662010</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>67</td><td>225020662011</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>68</td><td>225020662012</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>69</td><td>225020662013</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>70</td><td>225020662014</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>71</td><td>225020662015</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>72</td><td>225020662016</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>73</td><td>225020662017</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>74</td><td>225020662018</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>75</td><td>225020662019</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                    <tr><td>76</td><td>225020662020</td><td>HE200A*12000</td><td>0.508000</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="summary">
+            总重量: 38.608000 吨
+        </div>
+    </div>
+</body>
+</html>
